@@ -69,8 +69,14 @@ namespace VTFEdit
 			vlSetFloat(VTFLIB_LUMINANCE_WEIGHT_G, Options->LuminanceWeightG);
 			vlSetFloat(VTFLIB_LUMINANCE_WEIGHT_B, Options->LuminanceWeightB);
 
-			if (Options->sRGB)
-				VTFCreateOptions.uiFlags |= TEXTUREFLAGS_SRGB;
+/*
+*	The bit of code below is commented out because it is invalid and the wrong thing to do on multiple fronts,
+*	Some of why this is wrong/invalid stem from issues with VTFEdit/VTFLib's internal design and or problematic decisions from Valve with later branches/versions of Source depending on how you look at it,
+*	Either way this should never be turned back on unless VTFEdit/VTFLib's handling of different VTF versions gets a major overhaul but even then I doubt this marker flag is that useful or even valid for what it's being used for here.
+*/
+
+//			if (Options->sRGB)
+//				VTFCreateOptions.uiFlags |= TEXTUREFLAGS_SRGB;
 
 			return VTFCreateOptions;
 		}
