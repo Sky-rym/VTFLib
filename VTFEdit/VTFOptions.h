@@ -452,8 +452,8 @@ private: System::Windows::Forms::CheckBox^ chkSrgb;
 			this->chkSrgb->Text = L"sRGB Color Space";
 			this->chkSrgb->UseVisualStyleBackColor = true;
 			this->tipMain->SetToolTip(this->chkSrgb, L"Whether or not to treat input image as sRGB instead of Linear when generating mipma"
-				L"ps or resizing. Turn this off when creating textures that are not meant to be viewed directly, such as normal maps and s"
-				L"pecular masks (aka turn this off for pretty much anything that's not a diffuse/basetexture).");
+				L"ps or resizing.\r\nTurn this off when creating textures that are not meant to be viewed directly, such as normal maps and s"
+				L"pecular masks\r\n(aka turn this off for pretty much anything that's not a diffuse/basetexture).");
 			// 
 			// cboAlphaFormat
 			// 
