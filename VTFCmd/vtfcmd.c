@@ -269,7 +269,7 @@ int main(int argc, char* argv[])
 			else if(stricmp(argv[i], "-srgb") == 0)
 			{
 				CreateOptions.bSRGB = vlTrue;
-				CreateOptions.uiFlags |= TEXTUREFLAGS_SRGB;
+				//CreateOptions.uiFlags |= TEXTUREFLAGS_SRGB;	// This should not be on until VTF version handling is overhauled, Check `VTFFileUtility.h` for a longer comment.
 			}
 			else if(stricmp(argv[i], "-alphaformat") == 0)
 			{
